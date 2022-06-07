@@ -94,6 +94,10 @@
         color:rgb(43, 58, 103); 
     }
 
+    #gradiente{
+        background-image: linear gradient (to right, rgb(102,153,155), rgb(73,106,129));
+    }
+
     footer{
         color:rgb(43, 58, 103);
         background-color: rgb(179, 175, 143);
@@ -137,6 +141,19 @@ footer{
 section#servicios1{
     grid-area: servicios1;
     background-color: (102, 153, 155);
+}
+
+#gradiente{
+    background-image: linear-gradient(to right, rgb(102,153,155), rgb(73,106,129));
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-around;
+    align-items: center;
+    height: 700px;
+    width: 1 fr;
+    gap: 50px;
+    font-family: 'Inter', sans-serif;
+    color:rgb(43, 58, 103); 
 }
 
 section#servicios2{
