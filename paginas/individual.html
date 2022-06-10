@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/estilos.css">
     <title>individual</title>
 </head>
@@ -13,87 +13,119 @@
 
 <!-- inicio body -->
 <body>
-    <div id="grilla">
-        
 <!-- inicio header -->
-        <header class="border">
-            <nav id="barra" class="border">
-                <ul>
-                    <li>
-                        <a href="../index.html">Inicio</a>
-                    </li>
-                    <li>
-                        <a href="./individual.html">Individual</a>
-                    </li>
-                    <li>
-                        <a href="./pareja.html">Pareja</a>
-                    </li>
-                    <li>
-                        <a href="./empresas.html">Empresas</a>
-                    </li>
-                    <li>
-                        <a href="./escuelas.html">Escuelas</a>
-                    </li>
-                    <li>
-                        <a href="./contactanos.html">Contáctanos</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
+    <nav class="navbar navbar-expand-lg navbar-light navegacion">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./individual.html">Individual</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./pareja.html">Pareja</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./empresas.html">Empresas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./escuelas.html">Escuelas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./contactanos.html">Contáctanos</a>
+              </li>
+          </div>
+        </div>
+      </nav>
 <!-- fin header -->
 
-<!-- inicio main  -->
-        <section id="servicios1" class="border">
-            <h1 data-aos="fade-down">Psicoterapia Individual</h1>
+<section class="container-fluid seccion1">
 
-            <figure>
-                <img src="../imagenes/chica_angustiada793x529.jpg" alt="mujer joven en consulta con el psicologo" data-aos="fade-left">
-            
-                <figcaption>Mujer angustiada acude al psicólogo</figcaption>
+  <figure class="text-center pt-4">
 
-            </figure>
+    <h2>Psicoterapia Individual</h2>
 
-            <h2 data-aos="fade-down-right">¿Que es la psicoterapia individual?</h2>
+  </figure>
 
-            <p data-aos="fade-up-left">En un espacio terapéutico individual se tratan problemas a nivel personal como: depresión, autoestima, estrés, dolor crónico, ansiedad, insomnio, anorexia, bulimia, etc. </p>
+  <div class="row">
 
-            <p data-aos="fade-up-left">Generalmente se trabaja en el aquí y ahora, sin embargo también tomamos en cuenta el pasado (recuerdos, conductas aprendidas, ideas preconcebidas) y tambien el futuro (planes a corto, mediano y largo plazo).</p>
+    <div class="col-lg-12 col-md-8 col-sm-12 seccion1">
 
-             <p data-aos="fade-up-left">Nuestro enfoque principalmente es la solución de problemas haciendo cosas diferentes. </p>
+      <img src="../imagenes/chica_angustiada793x529.jpg" class="rounded mx-auto d-block" alt="">
 
-        </section>
+    </div>
 
-        <section id="servicios2" class="border">
+    <div class="col-lg-12 col-md-4 col-sm-12">
+      
+      <h2 class="text-center pt-4">¿Que es la psicoterapia individual?</h2>
 
-           <iframe width="560" height="315" src="https://www.youtube.com/embed/CMVXn5NAsE4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen data-aos="flip-right"></iframe>
+      <p class="text-center">En un espacio terapéutico individual se tratan problemas a nivel personal como: depresión, autoestima, estrés, dolor crónico, ansiedad, insomnio, anorexia, bulimia, etc.</p>
 
-        </section>
-<!-- fin main -->
-<!-- inicia aside -->
-<aside class="border">
-    <p>
-        Codigo de google ads
+      <p class="text-center">Generalmente se trabaja en el aquí y ahora, sin embargo también tomamos en cuenta el pasado (recuerdos, conductas aprendidas, ideas preconcebidas) y tambien el futuro (planes a corto, mediano y largo plazo).</p>
 
-    </p>
+      <p class="text-center">Nuestro enfoque principalmente es la solución de problemas haciendo cosas diferentes.</p>
 
-</aside>
-<!-- fin aside -->
+    </div>
+  </div>
+  </section>
 
-<!-- inicio footer -->
-    <footer class="border">
-        <h3 id="mobile">Llamanos: 771-1352464 Celular</h3>
-        <h3 id="mobile">771-713-1457 Oficina</h3>
-        <h3 id="mobile">Nos ubicamos en: Av. Francisco I. Madero No. 510 1er piso Col. Doctores. Pachuca, Hidalgo</h3>
-        <h3 id="mobile">Escribenos a: contacto@psicologopachuca.com</h3>
 
+  <section class="container-fluid seccion1">
+
+      <div class="row">
+
+          <div class="col-lg-8 col-md-9 col-sm-12 mt-4">
+
+            <div class="ratio ratio-16x9">
+
+              <iframe src="https://www.youtube.com/embed/CMVXn5NAsE4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+          </div>
+
+        <div class="col-lg-4 col-md-3 col-sm-12 mt-4">
+
+         <p class="text center">Anuncios de google Adsense</p>
+
+        </div>
+
+      </div>
+  </section>
+
+    <footer class="container-fluid datos mt-4">
+
+        <div class="row">
+
+            <div class="col-lg-3 col-md-4 col-sm-12 mt-3">
+
+              <h5>Llamanos</h5>
+              <h6>771-1352464 Celular</h6>
+              <h6>771-713-1457 Oficina</h6>
+
+            </div>
+
+        <div class="col-lg-6 col-md-4 col-sm-12 mt-3">
+            <h5 class="text center">Nos ubicamos en:</h5>
+            <h6>Av. Francisco I. Madero No. 510 1er piso Col. Doctores. Pachuca, Hidalgo.</h6>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col.sm-12 mt-3">
+      
+          <h5>Escribenos a:</h6>
+          <h6>contacto@psicologopachuca.com</h6>
+
+        </div>
     </footer>
-<!-- fin footer -->
+  </section>
 </div>
 
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-    AOS.init();
-  </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
 </body>
 <!-- fin body -->
