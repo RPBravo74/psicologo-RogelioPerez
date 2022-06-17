@@ -1,0 +1,149 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+#grilla{
+    display: grid;
+    grid-template-areas: 
+    "header      header"
+    "servicios1  publicidad"
+    "servicios2  publicidad"
+    "footer      footer"; 
+    grid-template-columns: 85% 15%;
+    grid-template-rows: 1fr 1fr;
+    width: 100vw;
+    height: 100vh;
+
+    header{
+        grid-area: header;
+    }
+    
+    footer{
+        grid-area: footer;
+    }
+    
+    section#servicios1{
+        grid-area: servicios1;
+    }
+    
+    section#servicios2{
+        grid-area: servicios2;
+    }
+    
+    aside{
+        grid-area: publicidad;
+    }
+
+}
+
+header{
+    nav ul{
+        list-style-type: none;
+        text-decoration: none;
+        display: flex;
+        justify-items: center;
+        align-content: center;
+        gap: 40px;
+
+        a{
+            text-decoration: none;
+            font-family: 'Inter', sans-serif;
+            color:rgb(43, 58, 103); 
+        }
+    }
+}
+
+#gradiente{
+    background-image: linear gradient (to right, rgb(102,153,155), rgb(73,106,129));
+    &#gradiente{
+        background-image: linear-gradient(to right, rgb(102,153,155), rgb(73,106,129));
+        display: flex;
+        flex-direction: column; 
+        justify-content: space-around;
+        align-items: center;
+        height: 700px;
+        width: 1 fr;
+        gap: 50px;
+        font-family: 'Inter', sans-serif;
+        color:rgb(43, 58, 103); 
+    }
+}
+
+
+
+.border{
+    border: 1px solid black;
+}
+
+#barra{
+        list-style-type: none;
+        text-decoration: none;
+        color:rgb(43, 58, 103);
+        background-color: rgb(179, 175, 143);
+        font-family: 'Inter', sans-serif;
+        height: 80px;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+    }
+    
+
+#servicios1{
+    background-color: rgb(102, 153, 155);
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    gap: 50px;
+    font-family: 'Inter', sans-serif;
+    color:rgb(43, 58, 103); 
+    p{
+        font-family: 'Inter', sans-serif;
+        font-size: large;
+    }
+}
+
+img{
+    margin-top: 40px;
+    margin-right: 100px;
+    margin-bottom: 40px;
+    margin-left: 100px;
+    border: 20px inset $color1;
+}
+
+#servicios2{
+    background-color: rgb(102, 153, 155);
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-around;
+    align-items: center;
+    height: 500px;
+    gap: 50px;
+    font-family: 'Inter', sans-serif;
+    color:rgb(43, 58, 103); 
+}
+
+iframe{
+    margin-top: 60px;
+    margin-right: 150px;
+    margin-bottom: 60px;
+    margin-left: 150px;
+    border: 20px inset $color4;
+}
+
+#mobile{
+    color:rgb(43, 58, 103);
+    font-family: 'inter', sans-serif;
+    font-size: medium;
+    font-weight: 350;
+}
+
+
+
+
+
+
