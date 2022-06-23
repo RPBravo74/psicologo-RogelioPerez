@@ -1,0 +1,64 @@
+
+/*maps*/
+
+$redes: ( 
+       twitter: #1DA1F2, 
+       facebook:#3b5998,
+       instagram:#C13584,
+);
+@each $red, $color in $redes {
+    .btn--#{$red}{
+        background-color: $color;
+    }
+}
+
+
+/*Extend*/
+
+.marco{
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+}
+
+.marco--1{
+@extend .marco;
+border-color: #496A81;
+border-width: 4px;
+border-style: dotted;
+}
+
+.marco--2{
+@extend .marco;
+border-color: #496A81;
+border-width: 4px;
+border-style: solid;
+}
+
+.marco--3{
+@extend .marco;
+border-color: #496A81;
+border-width: 4px;
+border-style: double;
+}
+
+.marco--4{
+@extend .marco;
+border-color: #496A81;
+border-width: 4px;
+border-style: ridge;
+}
+
+
+/*Mixin*/
+@mixin color-invertido{
+    background-color:rgb(43, 58, 103);
+    color: rgb(102, 153, 155);
+}
+
+.my_mixin{
+    border-color: #496A81;
+    border-width: 2px;
+    border-style: double;
+    @include color-invertido;
+}
+

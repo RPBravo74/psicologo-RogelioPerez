@@ -15,9 +15,6 @@
 #grilla header {
   grid-area: header;
 }
-#grilla footer {
-  grid-area: footer;
-}
 #grilla section#servicios1 {
   grid-area: servicios1;
 }
@@ -26,6 +23,9 @@
 }
 #grilla aside {
   grid-area: publicidad;
+}
+#grilla footer {
+  grid-area: footer;
 }
 
 header nav ul {
@@ -141,19 +141,48 @@ header nav ul a {
 
 #servicios1 {
   background-color: rgb(102, 153, 155);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 2 fr, 2 fr;
+  grid-template-rows: 2 fr, 2 fr;
+  justify-items: center;
   align-items: center;
-  height: auto;
+  justify-content: space-evenly;
+  align-content: center;
   gap: 50px;
   font-family: "Inter", sans-serif;
   color: rgb(43, 58, 103);
+  border-color: black 2 px;
+  border-style: dotted;
+}
+#servicios1 h1 {
+  display: grid;
+  grid-column: 100%;
+  grid-row: 50%;
+  justify-content: center;
+  align-content: center;
+  border: 4px;
+  border-color: aqua;
 }
 #servicios1 p {
+  display: grid;
   font-family: "Inter", sans-serif;
   font-size: large;
   color: rgb(43, 58, 103);
+  justify-self: center;
+  align-self: center;
+}
+#servicios1 img {
+  display: grid;
+  justify-self: center;
+  align-self: center;
+}
+#servicios1 .botones {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 150px;
+  width: 800px;
 }
 
 #servicios2 {
@@ -185,7 +214,66 @@ footer {
   background-color: rgb(179, 175, 143);
   font-family: "Inter", sans-serif;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
+  flex-basis: auto;
+  gap: 15px;
+  width: 100vw;
+  height: 100px;
+}
+footer h3 {
+  align-self: center;
+}
+
+/*maps*/
+.btn--twitter {
+  background-color: #1DA1F2;
+}
+
+.btn--facebook {
+  background-color: #3b5998;
+}
+
+.btn--instagram {
+  background-color: #C13584;
+}
+
+/*Extend*/
+.marco, .marco--4, .marco--3, .marco--2, .marco--1 {
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+}
+
+.marco--1 {
+  border-color: #496A81;
+  border-width: 4px;
+  border-style: dotted;
+}
+
+.marco--2 {
+  border-color: #496A81;
+  border-width: 4px;
+  border-style: solid;
+}
+
+.marco--3 {
+  border-color: #496A81;
+  border-width: 4px;
+  border-style: double;
+}
+
+.marco--4 {
+  border-color: #496A81;
+  border-width: 4px;
+  border-style: ridge;
+}
+
+/*Mixin*/
+.my_mixin {
+  border-color: #496A81;
+  border-width: 2px;
+  border-style: double;
+  background-color: rgb(43, 58, 103);
+  color: rgb(102, 153, 155);
 }/*# sourceMappingURL=style.css.map */

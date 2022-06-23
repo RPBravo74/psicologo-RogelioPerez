@@ -20,11 +20,7 @@
     header{
         grid-area: header;
     }
-    
-    footer{
-        grid-area: footer;
-    }
-    
+
     section#servicios1{
         grid-area: servicios1;
     }
@@ -35,6 +31,10 @@
     
     aside{
         grid-area: publicidad;
+    }
+   
+    footer{
+        grid-area: footer;
     }
 
 }

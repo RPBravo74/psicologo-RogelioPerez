@@ -4,7 +4,15 @@ footer{
     background-color: rgb(179, 175, 143);
     font-family: 'Inter', sans-serif;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
-    justify-content: center;
+    flex-basis: auto;
+    gap: 15px;
+    width: 100vw;
+    height: 100px;
+
+    h3{
+        align-self: center;
+    }
 }
