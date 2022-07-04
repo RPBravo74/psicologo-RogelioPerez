@@ -1,19 +1,22 @@
 
-
-
-header{
-    nav ul{
-        list-style-type: none;
-        text-decoration: none;
-        display: flex;
-        justify-items: center;
-        align-content: center;
-        gap: 40px;
-
-        a{
-            text-decoration: none;
-            font-family: 'Inter', sans-serif;
-            color:rgb(43, 58, 103); 
-        }
-    }
+.navegacion{
+    background-color: #1F4690;
+    font-family: 'Inter', sans-serif;
 }
+
+    
+a{
+    color: #FFA500;
+}
+
+li{
+    color: #FFA500;
+}
+.elementos{
+    color: #FFA500;
+}
+
+
+
+
+

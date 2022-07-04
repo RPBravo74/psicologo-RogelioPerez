@@ -1,0 +1,51 @@
+
+.menuContainer{
+    background-color: #1F4690;
+   
+}
+
+.menu{
+    width: auto;
+    display:flex;
+   
+    
+}
+
+a{
+    text-decoration: none;
+}
+
+nav{
+    padding: 10px;
+    display:flex;
+    justify-content: start;
+    height: auto;
+    
+    ul{
+        width: auto;
+        display: flex;
+        gap: 30px;
+        align-items: center;
+        flex-wrap: wrap;
+        text-decoration: none;
+        list-style: none;
+    }
+
+    a{
+        list-style: none;
+    }
+}
+
+#header{
+   
+    background-color: #1F4690;
+    grid-area: "header";
+        ul{
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            text-decoration: none;
+            list-style: none;
+        }
+}
+
