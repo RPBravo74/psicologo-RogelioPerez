@@ -1,0 +1,537 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@media(max-width:576px){
+
+    /*mediaqueries empresasz*/
+
+    h1{
+        color: #1F4690;
+    }
+    
+    h2{
+        color: #1F4690;
+    }
+    
+    h3{
+        color: #1F4690;
+    }
+    
+    p{
+        color:#1F4690;
+    }
+
+  
+    .sectionContainer1{
+        width: 100vw;
+        height: 30vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: "titemp1"
+                             "titemp2"
+                             "titemp3"
+                             "banner1";
+        justify-items: center;
+        align-items: center;
+
+    }
+    
+
+    .sectionContainer2{
+        
+        display: flex;
+        flex-direction: column;
+    
+        .section3{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: start;
+            align-items: center;
+            gap: 40px;
+            margin: 40px 60px 80px 60px;
+            padding: 40px 60px 80px 60px;
+
+            p{
+                font-size: medium;
+            }
+    
+            .contenido1{
+                color:#1F4690;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 20px;
+            }
+            .banner2{
+                height: 300px;
+                width: 500px;
+                
+            }
+        }
+    }
+ }
+
+    .sectionContainer3{
+        max-width: auto;
+       
+    
+        .section4{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            align-self: center;
+            flex-wrap: nowrap;
+            margin: 40px 0px 40px 0px;
+            padding: 40px 0px 40px 0px;
+    
+           
+            li{
+                color:#1F4690;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 20px;
+                list-style: none;
+               
+            }
+            #titulo{
+                font-weight: bold;
+            }
+
+            #imagenpruebas{
+                height: 300px;
+                width: 500px;
+                padding-bottom: 30px;
+                margin-bottom: 30px;
+
+            }
+
+            #serviciosEmpresas{
+                margin-top: 60px;
+                padding-top: 30px;
+            }
+        }
+    }
+
+    .sectionContainer4{
+        display: flex;
+        flex-direction: column;
+    
+
+    #seccion3{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        align-self: center;
+            }
+
+    .contenido2{
+      
+        margin: 0px 0px 80px 80px;
+        padding: 0px 0px 40px 60px;
+        font-size: large;
+        font-weight: 500;
+            }
+
+    .videoEmp{
+        margin: 40px 0px 40px 10px;
+        padding: 0px 0px 60px 10px;
+        height: 150px;
+        width: 250px;
+         }
+    }
+
+        #encabezado{
+            gap: 40px;
+        }
+
+   /*mediaquerie de escuelas*/
+
+   #banner{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0px 30px 0px;
+    }
+
+    #evaluacion1{
+
+        display: flex;
+        flex-direction: column;
+        padding: 40x 0px 40px 0px;
+
+    
+    }
+
+    #section1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        padding: 60px 5px 40px 0px;
+        gap: 40px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 20px;
+
+    }
+
+    #section2{
+        display: flex;
+        flex-direction: column;
+        color:#1F4690;
+        margin: 0px 0px 40px 0px;
+
+        #serviciosEscuelas{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 20px;
+            list-style: none;
+
+        }
+    }
+
+    #section3{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        gap: 40px;
+        margin: 20px 0px 40px 20px;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    h1{
+        color: #1F4690;
+    }
+    
+    h2{
+        color: #1F4690;
+    }
+    
+    h3{
+        color: #1F4690;
+    }
+    
+    p{
+        color:#1F4690;
+    }
+
+    #main2a{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: "titemp1"
+                             "titemp2"
+                             "titemp3"
+                             "banner1";
+        justify-items: stretch;
+        align-items: stretch;
+        row-gap: 40px;
+
+        #titemp1{
+            padding-bottom: 50px;
+        }
+
+        #titemp2{
+            padding-bottom: 50px;
+        }
+
+        #titemp3{
+            padding-bottom: 50px;
+        }
+      
+    }
+
+            
+    
+
+ /*mediaqueries escuelas*/
+
+ #encabezado{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "titulares"
+                          "banner";
+    justify-items: center;
+    align-items: center;
+    row-gap: 40px;
+ }
+
+ #titulo1{
+    padding: 0px 0px 40px 0px;
+ }
+
+ #titulo2{
+    padding: 0px 0px 40px 0px;
+ }
+
+ #banner{
+    padding: 0px 0px 40px 0px;
+ }
+
+
+ #section1{
+    width: 100%;
+    display: grid;
+    grid-template-rows: 450px;
+    grid-template-columns: 1fr auto;
+    grid-template-areas: "evalucion1"
+                          "introeval";
+    justify-items: center;
+    align-items: center;
+    row-gap: 10px;
+    column-gap: 20px;
+ }
+
+ #section2{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr auto;
+    grid-template-areas: "seviciosEscuelas"
+                          "imagenEscuelas";
+    justify-items: center;
+    align-items: center;
+    row-gap: 40px;
+    column-gap: 30px;
+
+    ul{
+        text-decoration: none;
+        list-style: none;
+        color: #1F4690;
+        #tituloServ{ 
+            font-weight: 800;   
+            }
+        }
+    
+    }
+
+    #section3{
+
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr auto;
+        grid-template-areas: "videoEsc"
+                              "anunciosEsc";
+        justify-items: center;
+        align-items: center;
+        row-gap: 40px;
+        column-gap: 30px;
+
+    }
+}
+
+
+
+
+@media (min-width: 992px){
+
+h1{
+    color: #1F4690;
+}
+
+h2{
+    color: #1F4690;
+}
+
+h3{
+    color: #1F4690;
+}
+
+p{
+    color:#1F4690;
+}
+
+li{
+    color:#1F4690
+}
+
+/*main empresas*/
+
+#encabezado2{
+    display:grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: "titemp1"
+                         "titemp2"
+                         "titemp3"
+                         "banner1";
+    justify-items: center;
+    align-items: center;
+    row-gap: 40px;
+    column-gap: 30px 
+}
+
+#seccion1{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr auto;
+    grid-template-areas: "contenido1"
+                          "banner2";
+    justify-items: center;
+    align-items: center;
+    row-gap: 50px;
+    column-gap: 20px;
+    padding: 0px 0px 20px 40px;
+
+    p{
+        font-size: large;
+    }
+ }
+
+ #section4{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr auto;
+    grid-template-areas: "imagenpruebas"
+                          "serviciosEmpresas";
+    justify-items: center;
+    align-items: center;
+    row-gap: 40px;
+    column-gap: 30px;
+    font-size: large;
+
+    ul{
+        text-decoration: none;
+        list-style: none;
+        color: #1F4690;
+        font-size: large;
+        }
+    
+        li{
+            text-decoration: none;
+            list-style: none;
+            color: #1F4690;
+             
+        }
+        
+        #titulo{ 
+            font-weight: 800;   
+            }
+    
+    }
+
+    #section5{
+
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr auto;
+        grid-template-areas: "contenido2"
+                              "videoEmp";
+        justify-items: center;
+        align-items: center;
+        row-gap: 40px;
+        column-gap: 30px;
+        font-size: large;
+
+    }
+
+    #seccion3a{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-content: center;
+    }
+    
+
+}
+
+
+/*main escuelas*/
+#mainEsc{
+    width: 100%;
+    grid-area: "main";
+
+    #encabezado{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    gap: 30px;
+
+
+    #titulares{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 40px;
+        padding: 60px;
+        
+    }
+
+    #bannerGrid{
+        height: 600px;
+        width: 900px;
+        margin-bottom: 80px;
+    }    
+
+    }
+
+    #section1{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 400px;
+    padding: 40px 100px 40px 60px;   
+    color:#1F4690;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+
+    #evaluacion{
+        width: 700px;
+        height: 500px;
+    }
+    }
+
+    #section2{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 200px;
+    padding: 40px 100px 60px 30px;
+
+
+    li{
+        color:#1F4690;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 20px;
+        list-style: none;
+       
+    }
+
+    #imagenEscuelas{
+        width: 700px;
+        height: 500px;
+    }
+
+    }
+
+    #section3{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: center;
+    padding: 40px 400px 60px 60px;
+    gap: 40x;
+    }
+
+    
+}

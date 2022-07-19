@@ -1,191 +1,849 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
-#grilla {
+@media (max-width: 576px) {
+  #body2a {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: "header" "nav" "main" "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+  }
+  #body2a header {
+    grid-area: header;
+  }
+  #body2a nav {
+    grid-area: nav;
+  }
+  #body2a main {
+    grid-area: main;
+  }
+  #body2a footer {
+    grid-area: footer;
+  }
+  /*mediaqueries de Escuelas*/
+}
+@media (min-width: 768px) {
+  #body2b {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "header" "main" "footer";
+    grid-area: header;
+    grid-area: main;
+    grid-area: footer;
+  }
+  /*mediaqueries de Escuelas*/
+  #bodyEsc {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+  }
+}
+@media (min-width: 992px) {
+  #body3b {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: "header" "main" "footer";
+  }
+}
+@media (max-width: 576px) {
+  .navegacion {
+    background-color: #1F4690;
+  }
+  .menuContainer {
+    background-color: #1F4690;
+  }
+  .menu {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .menu #logo2 {
+    height: 75px;
+    width: 300px;
+  }
+  /*mediaquerie de html escuelas*/
+  .menuEsc {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .menuEsc #logo2 {
+    height: 75px;
+    width: 300px;
+  }
+  #titulares {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 20px 0px 20px 0px;
+  }
+}
+@media (min-width: 768px) {
+  .navegacion {
+    background-color: #1F4690;
+  }
+  .menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "logo2 menu2";
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background-color: #1F4690;
+    -moz-column-gap: 50px;
+         column-gap: 50px;
+    padding-left: 70px;
+  }
+  .menu ul {
+    text-decoration: none;
+    list-style: none;
+  }
+  .menu a {
+    color: #FFA500;
+    text-decoration: none;
+  }
+  #encabezado2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 15% 15% 15% 65%;
+    grid-template-areas: "titemp1" "titemp2" "titemp3" "banner1";
+    gap: 10px;
+    align-content: center;
+    align-items: center;
+    justify-self: center;
+    padding: 50px 10px 50px 10px;
+  }
+}
+/*mediaqueries Escuelas*/
+.menuEsc {
   display: grid;
-  grid-template-areas: "header      header" "servicios1  publicidad" "servicios2  publicidad" "footer      footer";
-  grid-template-columns: 85% 15%;
-  grid-template-rows: 1fr 1fr;
-  width: 100vw;
-  height: 100vh;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "logo1 menuEsc";
+  justify-items: center;
+  align-items: center;
+  background-color: #1F4690;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  grid-row-gap: 20px;
 }
-#grilla header {
-  grid-area: header;
+.menuEsc ul {
+  text-decoration: none;
+  list-style: none;
 }
-#grilla footer {
-  grid-area: footer;
-}
-#grilla section#servicios1 {
-  grid-area: servicios1;
-}
-#grilla section#servicios2 {
-  grid-area: servicios2;
-}
-#grilla aside {
-  grid-area: publicidad;
+.menuEsc a {
+  color: #FFA500;
+  text-decoration: none;
 }
 
-header nav ul {
-  list-style-type: none;
-  text-decoration: none;
+@media (min-width: 992px) {
+  /*mediaqueries empresas*/
+  .menuContainer {
+    background-color: #1F4690;
+  }
+  .menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "logo2 menu2";
+    justify-items: start;
+    align-items: center;
+    background-color: #1F4690;
+    padding: 10px 0px 10px 10px;
+  }
+  .menu ul {
+    text-decoration: none;
+    list-style: none;
+  }
+  .menu a {
+    color: #FFA500;
+    text-decoration: none;
+  }
+  .menu #logo2 {
+    height: 75px;
+    width: 300px;
+  }
+  #menu2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 40px;
+  }
+}
+#header {
+  background-color: #1F4690;
+  grid-area: "header";
+}
+#header #logo1 {
+  height: 75px;
+  width: 300px;
+}
+#header ul {
   display: flex;
-  justify-items: center;
-  align-content: center;
+  gap: 30px;
+  align-items: center;
+  text-decoration: none;
+  list-style: none;
+}
+
+/*mediaqueries escuelas*/
+.menuEsc {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "logo1 menuEscu";
+  justify-items: start;
+  align-items: center;
+  background-color: #1F4690;
+  padding: 10px 0px 10px 10px;
+}
+.menuEsc ul {
+  text-decoration: none;
+  list-style: none;
+}
+.menuEsc a {
+  color: #FFA500;
+  text-decoration: none;
+}
+.menuEsc #logo1 {
+  height: 75px;
+  width: 300px;
+}
+
+#menuEscu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
   gap: 40px;
 }
-header nav ul a {
-  text-decoration: none;
-  font-family: "Inter", sans-serif;
-  color: rgb(43, 58, 103);
+
+* {
+  margin: 0;
+  padding: 0;
 }
 
-#gradiente {
-  background-image: linear gradient to right, rgb(102, 153, 155), rgb(73, 106, 129);
+@media (min-width: 992px) {
+  .navegacion {
+    background-color: #1F4690;
+    font-family: "Inter", sans-serif;
+  }
+  a {
+    color: #FFA500;
+  }
+  li {
+    color: #FFA500;
+  }
+  .elementos {
+    color: #FFA500;
+  }
 }
-#gradiente#gradiente {
-  background-image: linear-gradient(to right, rgb(102, 153, 155), rgb(73, 106, 129));
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  height: 700px;
-  width: 1 fr;
-  gap: 50px;
-  font-family: "Inter", sans-serif;
-  color: rgb(43, 58, 103);
-}
-
-.border {
-  border: 1px solid black;
-}
-
-#barra {
-  list-style-type: none;
-  text-decoration: none;
-  color: rgb(43, 58, 103);
-  background-color: rgb(179, 175, 143);
-  font-family: "Inter", sans-serif;
-  height: 80px;
-  display: grid;
-  justify-items: center;
-  align-items: center;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-#servicios1 {
-  background-color: rgb(102, 153, 155);
+@media (max-width: 576px) {
+  /*mediaqueries empresasz*/
+  h1 {
+    color: #1F4690;
+  }
+  h2 {
+    color: #1F4690;
+  }
+  h3 {
+    color: #1F4690;
+  }
+  p {
+    color: #1F4690;
+  }
+  #titemp1 {
+    margin-left: 40px;
+  }
+  /*
+      .sectionContainer1{
+          width: 100vw;
+          height: 50vh;
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-template-rows: 1fr 1fr;
+          grid-template-areas: "section1"
+                               "banner1";
+
+
+
+          }
+
+
+      .sectionContainer2{
+
+          display: flex;
+          flex-direction: column;
+
+          .section3{
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-content: start;
+              align-items: center;
+              gap: 40px;
+              margin: 40px 60px 80px 60px;
+              padding: 40px 60px 80px 60px;
+
+              p{
+                  font-size: medium;
+              }
+
+              .contenido1{
+                  color:#1F4690;
+                  font-family: Verdana, Geneva, Tahoma, sans-serif;
+                  font-size: 20px;
+              }
+              .banner2{
+                  height: 300px;
+                  width: 500px;
+
+              }
+          }
+      }
+   }
+
+      .sectionContainer3{
+          max-width: auto;
+
+
+          .section4{
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-content: center;
+              align-items: center;
+              align-self: center;
+              flex-wrap: nowrap;
+              margin: 40px 0px 40px 0px;
+              padding: 40px 0px 40px 0px;
+
+
+              li{
+                  color:#1F4690;
+                  font-family: Verdana, Geneva, Tahoma, sans-serif;
+                  font-size: 20px;
+                  list-style: none;
+
+              }
+              #titulo{
+                  font-weight: bold;
+              }
+
+              #imagenpruebas{
+                  height: 300px;
+                  width: 500px;
+                  padding-bottom: 30px;
+                  margin-bottom: 30px;
+
+              }
+
+              #serviciosEmpresas{
+                  margin-top: 60px;
+                  padding-top: 30px;
+              }
+          }
+      }
+
+      .sectionContainer4{
+          display: flex;
+          flex-direction: column;
+
+
+      #seccion3{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-content: center;
+          align-items: center;
+          align-self: center;
+              }
+
+      .contenido2{
+
+          margin: 0px 0px 80px 80px;
+          padding: 0px 0px 40px 60px;
+          font-size: large;
+          font-weight: 500;
+              }
+
+      .videoEmp{
+          margin: 40px 0px 40px 10px;
+          padding: 0px 0px 60px 10px;
+          height: 150px;
+          width: 250px;
+           }
+      }
+
+          #encabezado{
+              gap: 40px;
+          }
+
+     /*mediaquerie de escuelas*/
+  #banner {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0px 30px 0px;
+  }
+  #evaluacion1 {
+    display: flex;
+    flex-direction: column;
+    padding: 40x 0px 40px 0px;
+  }
+  #section1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 60px 5px 40px 0px;
+    gap: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+  }
+  #section2 {
+    display: flex;
+    flex-direction: column;
+    color: #1F4690;
+    margin: 0px 0px 40px 0px;
+  }
+  #section2 #serviciosEscuelas {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    list-style: none;
+  }
+  #section3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    gap: 40px;
+    margin: 20px 0px 40px 20px;
+  }
+}
+@media (max-width: 768px) {
+  h1 {
+    color: #1F4690;
+  }
+  h2 {
+    color: #1F4690;
+  }
+  h3 {
+    color: #1F4690;
+  }
+  p {
+    color: #1F4690;
+  }
+  #main2a {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "titemp1" "titemp2" "titemp3" "banner1";
+    justify-items: stretch;
+    align-items: stretch;
+    row-gap: 40px;
+  }
+  #main2a #titemp1 {
+    padding-bottom: 50px;
+  }
+  #main2a #titemp2 {
+    padding-bottom: 50px;
+  }
+  #main2a #titemp3 {
+    padding-bottom: 50px;
+  }
+  /*mediaqueries escuelas*/
+  #encabezado {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "titulares" "banner";
+    justify-items: center;
+    align-items: center;
+    row-gap: 40px;
+  }
+  #titulo1 {
+    padding: 0px 0px 40px 0px;
+  }
+  #titulo2 {
+    padding: 0px 0px 40px 0px;
+  }
+  #banner {
+    padding: 0px 0px 40px 0px;
+  }
+  #section1 {
+    width: 100%;
+    display: grid;
+    grid-template-rows: 450px;
+    grid-template-columns: 1fr auto;
+    grid-template-areas: "evalucion1" "introeval";
+    justify-items: center;
+    align-items: center;
+    row-gap: 10px;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+  }
+  #section2 {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr auto;
+    grid-template-areas: "seviciosEscuelas" "imagenEscuelas";
+    justify-items: center;
+    align-items: center;
+    row-gap: 40px;
+    -moz-column-gap: 30px;
+         column-gap: 30px;
+  }
+  #section2 ul {
+    text-decoration: none;
+    list-style: none;
+    color: #1F4690;
+  }
+  #section2 ul #tituloServ {
+    font-weight: 800;
+  }
+  #section3 {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr auto;
+    grid-template-areas: "videoEsc" "anunciosEsc";
+    justify-items: center;
+    align-items: center;
+    row-gap: 40px;
+    -moz-column-gap: 30px;
+         column-gap: 30px;
+  }
+}
+@media (min-width: 992px) {
+  h1 {
+    color: #1F4690;
+  }
+  h2 {
+    color: #1F4690;
+  }
+  h3 {
+    color: #1F4690;
+  }
+  p {
+    color: #1F4690;
+  }
+  li {
+    color: #1F4690;
+  }
+  /*main empresas*/
+  #encabezado2 {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: "titemp1" "titemp2" "titemp3" "banner1";
+    justify-items: center;
+    align-items: center;
+    row-gap: 40px;
+    -moz-column-gap: 30px;
+         column-gap: 30px;
+  }
+  #seccion1 {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr auto;
+    grid-template-areas: "contenido1" "banner2";
+    justify-items: center;
+    align-items: center;
+    row-gap: 50px;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+    padding: 0px 0px 20px 40px;
+  }
+  #seccion1 p {
+    font-size: large;
+  }
+  #section4 {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr auto;
+    grid-template-areas: "imagenpruebas" "serviciosEmpresas";
+    justify-items: center;
+    align-items: center;
+    row-gap: 40px;
+    -moz-column-gap: 30px;
+         column-gap: 30px;
+    font-size: large;
+  }
+  #section4 ul {
+    text-decoration: none;
+    list-style: none;
+    color: #1F4690;
+    font-size: large;
+  }
+  #section4 li {
+    text-decoration: none;
+    list-style: none;
+    color: #1F4690;
+  }
+  #section4 #titulo {
+    font-weight: 800;
+  }
+  #section5 {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr auto;
+    grid-template-areas: "contenido2" "videoEmp";
+    justify-items: center;
+    align-items: center;
+    row-gap: 40px;
+    -moz-column-gap: 30px;
+         column-gap: 30px;
+    font-size: large;
+  }
+  #seccion3a {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+  }
+}
+/*main escuelas*/
+#mainEsc {
+  width: 100%;
+  grid-area: "main";
+}
+#mainEsc #encabezado {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  height: auto;
-  gap: 50px;
-  font-family: "Inter", sans-serif;
-  color: rgb(43, 58, 103);
-}
-#servicios1 p {
-  font-family: "Inter", sans-serif;
-  font-size: large;
-}
-
-img {
-  margin-top: 40px;
-  margin-right: 100px;
-  margin-bottom: 40px;
-  margin-left: 100px;
-  border: 20px inset rgb(73, 106, 129);
-}
-
-#servicios2 {
-  background-color: rgb(102, 153, 155);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  height: 500px;
-  gap: 50px;
-  font-family: "Inter", sans-serif;
-  color: rgb(43, 58, 103);
-}
-
-iframe {
-  margin-top: 60px;
-  margin-right: 150px;
-  margin-bottom: 60px;
-  margin-left: 150px;
-  border: 20px inset rgb(179, 175, 143);
-}
-
-#mobile {
-  color: rgb(43, 58, 103);
-  font-family: "inter", sans-serif;
-  font-size: medium;
-  font-weight: 350;
-}
-
-header nav ul {
-  list-style-type: none;
-  text-decoration: none;
-  display: flex;
-  justify-items: center;
   align-content: center;
+  align-items: center;
+  gap: 30px;
+}
+#mainEsc #encabezado #titulares {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   gap: 40px;
+  padding: 60px;
 }
-header nav ul a {
-  text-decoration: none;
-  font-family: "Inter", sans-serif;
-  color: rgb(43, 58, 103);
+#mainEsc #encabezado #bannerGrid {
+  height: 600px;
+  width: 900px;
+  margin-bottom: 80px;
 }
-
-#servicios1 {
-  background-color: rgb(102, 153, 155);
+#mainEsc #section1 {
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-evenly;
   align-items: center;
-  height: auto;
-  gap: 50px;
-  font-family: "Inter", sans-serif;
-  color: rgb(43, 58, 103);
+  gap: 400px;
+  padding: 40px 100px 40px 60px;
+  color: #1F4690;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
 }
-#servicios1 p {
-  font-family: "Inter", sans-serif;
-  font-size: large;
-  color: rgb(43, 58, 103);
-}
-
-#servicios2 {
-  background-color: rgb(102, 153, 155);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
+#mainEsc #section1 #evaluacion {
+  width: 700px;
   height: 500px;
-  gap: 50px;
-  font-family: "Inter", sans-serif;
-  color: rgb(43, 58, 103);
+}
+#mainEsc #section2 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 200px;
+  padding: 40px 100px 60px 30px;
+}
+#mainEsc #section2 li {
+  color: #1F4690;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  list-style: none;
+}
+#mainEsc #section2 #imagenEscuelas {
+  width: 700px;
+  height: 500px;
+}
+#mainEsc #section3 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: center;
+  padding: 40px 400px 60px 60px;
+  gap: 40x;
 }
 
-aside {
-  background-color: rgb(43, 58, 103);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 40hv;
-  border: white;
-}
-aside p {
-  color: white;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-footer {
-  color: black;
-  background-color: rgb(179, 175, 143);
-  font-family: "Inter", sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+@media (max-width: 576px) {
+  .datos {
+    background-color: #1F4690;
+  }
+  #footerEmp {
+    background-color: #1F4690;
+    font-family: "Inter", sans-serif;
+  }
+  h4 {
+    color: #FFA500;
+  }
+  h5 {
+    color: #FFA500;
+  }
+  h6 {
+    color: #FFA500;
+  }
+  #footerEmp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    row-gap: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    padding-top: 200px;
+    margin-top: 250px;
+    margin-left: 20px;
+  }
+  #footerEmp #ubicacionEmp {
+    padding-left: 60px;
+  }
+  #footerEscuelas {
+    display: flex;
+    flex-direction: column;
+    background-color: #1F4690;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    align-self: center;
+    gap: 20px;
+  }
+  #footerEscuelas #ubicacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #footerEscuelas #ubicacion #ubi2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (min-width: 768px) {
+  .datos {
+    background-color: #1F4690;
+    font-family: "Inter", sans-serif;
+  }
+  h4 {
+    color: #FFA500;
+  }
+  h5 {
+    color: #FFA500;
+  }
+  h6 {
+    color: #FFA500;
+  }
+  #footerEmp {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "footer1 ubicacionEmp emailEmp";
+    justify-items: center;
+    align-items: center;
+    row-gap: 40px;
+    -moz-column-gap: 30px;
+         column-gap: 30px;
+    background-color: #1F4690;
+  }
+  /*footer escuelas*/
+  #footerEscuelas {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "telefonos ubicacion email";
+    justify-items: center;
+    align-items: center;
+    row-gap: 40px;
+    -moz-column-gap: 30px;
+         column-gap: 30px;
+    background-color: #1F4690;
+  }
+}
+@media (min-width: 992px) {
+  .datos {
+    background-color: #1F4690;
+    font-family: "Inter", sans-serif;
+  }
+  h4 {
+    color: #FFA500;
+  }
+  h5 {
+    color: #FFA500;
+  }
+  h6 {
+    color: #FFA500;
+  }
+  .footerContainer {
+    max-width: auto;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #1F4690;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 26px;
+  }
+  .footerContainer #footer1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  #footerEscuelas {
+    width: 100%;
+    background-color: #1F4690;
+    grid-area: "footer";
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "telefonos ubicacion email";
+    gap: 30px;
+    justify-items: center;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+  }
 }/*# sourceMappingURL=style.css.map */
